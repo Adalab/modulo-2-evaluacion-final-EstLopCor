@@ -1,19 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>Buscador de series</title>
 </head>
 
 <body>
-    <p>Buscador de series</p>
-    <input class="js-imput" placeholder="Busca tu serie">
-    <button class="js-button">Buscar</button>
-    <script type="text/javascript" src="./main.js"></script>
+    <header></header>
+    <main class="page__main">
+
+        <h2 class="title">Busca tu serie</h2>
+
+        <input id="search" type="text" placeholder="Escribe aqui..." class="js-input" required>
+
+        <button class="js-button">Buscar</button>
+        <ul class="js-result"></ul>
+
+    </main>
+
+    <footer class="page__footer">
+        <small>
+            Made with ❤ by
+            <a href="https://github.com/EstLopCor" title="Visita mi GitHub" target="_blank">EstLopCor</a>
+            2021
+        </small>
+    </footer>
+    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 
 </html>
