@@ -1,0 +1,132 @@
+body {
+  font-family: $font-main;
+  .main {
+    font-size: 22px;
+    height: 100vh;
+
+    & .wrapper {
+      height: 100vh;
+
+      & .search-form {
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        & .search-label {
+          font-size: 25px;
+        }
+        & .search-input {
+          margin: 0px 40px;
+          height: 40px;
+          padding-left: 15px;
+        }
+
+        & .search-button {
+          background-color: $color-primary;
+          color: $color-complementary;
+          padding: 10px;
+          font-size: 16px;
+          font-weight: 900;
+          border-radius: 15%;
+          border: none;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+.results {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  text-align: center;
+  background-image: url(../images/pink-popcorn-background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.js-series-list {
+  max-width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.js-fav-box {
+  width: 30%;
+  .fav-title {
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: $font-title;
+    color: $color-complementary;
+    background-color: $color-secondary;
+  }
+
+  .fav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    background-color: $color-primary;
+  }
+}
+li {
+  display: inline-block;
+  margin: 15px;
+  max-width: 210px;
+  max-height: 500px;
+
+  h3 {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  img {
+    border-radius: 10px;
+    width: 80%;
+  }
+}
+.clear-btn {
+  font-family: $font-main;
+  padding: 3px 7px;
+  border-radius: 50%;
+  background-color: $color-contrast;
+  transform: translate(250%, -50%);
+  border: none;
+  color: $color-complementary;
+  font-size: 25px;
+}
+
+.change-color {
+  background-color: $color-contrast;
+  color: $color-primary;
+  border-radius: 10px;
+}
+.box-results {
+  border: solid 2px $color-complementary;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+li-fav {
+  display: flex;
+  margin: 15px;
+  max-width: 155px;
+  max-height: 250px;
+
+  h3-fav {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  img-fav {
+    border-radius: 10px;
+    width: 80%;
+  }
+}

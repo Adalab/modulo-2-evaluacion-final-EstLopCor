@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  &__title {
+    color: $color-complementary;
+    font-family: $font-title;
+    font-size: 75px;
+  }
+}

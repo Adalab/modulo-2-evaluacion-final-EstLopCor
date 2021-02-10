@@ -1,0 +1,16 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  padding: 1rem;
+  background-color: $color-secondary;
+  text-align: center;
+  &__heart {
+    color: $color-complementary;
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-primary;
+  }
+}

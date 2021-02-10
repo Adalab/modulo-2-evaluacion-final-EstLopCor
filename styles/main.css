@@ -2,6 +2,20 @@
   box-sizing: border-box;
   background-color: #fffffb;
 }
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .title {
   color: #ff6b6c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

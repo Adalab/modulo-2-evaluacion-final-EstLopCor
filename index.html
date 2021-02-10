@@ -11,24 +11,34 @@
 
 <body>
     <header></header>
-    <main class="page__main">
+    <main>
 
         <h2 class="title">Busca tu serie</h2>
 
-        <input id="search" type="text" placeholder="Escribe aqui..." class="js-input" required>
+        <section class="page__left">
+            <form action="" method="post" id="form" class="search">
+                <input id="search" type="text" placeholder="Escribe aqui..." class="js-input" required>
 
-        <button class="js-button">Buscar</button>
-        <ul class="js-result"></ul>
+                <button type="submit" id="btn-search" class="js-button">Buscar</button>
+            </form>
+            <h2>Mis series favoritas</h2>
+            <ul class="js-favorites"></ul>
+            <!-- Esto se rellena con el main.js paintFavorite -->
+            <button class="reset__button js-reset-button">Borrar</button>
+        </section>
+
+        <section class="page__right">
+            <div class="noResults noResults--hidden">
+                <p class="msg-no-results__text">No se han encontrato resultados</p>
+            </div>
+            <ul class="main__list js-results">
+                <!-- Esto se rellena con el main.js paintShows -->
+            </ul>
+        </section>
 
     </main>
 
-    <footer class="page__footer">
-        <small>
-            Made with ❤ by
-            <a href="https://github.com/EstLopCor" title="Visita mi GitHub" target="_blank">EstLopCor</a>
-            2021
-        </small>
-    </footer>
+
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
 

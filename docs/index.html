@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Series finder</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="icon" href="./assets/images/favicon.png" />
+</head>
+
+<body>
+  <header class="header">
+      <h1 class="header__title">Busca tu serie</h1>
+  </header>
+  <main class="main">
+    <div class="wrapper">
+      <form class="search-form js-search-form" action="" method="POST">
+        <input type="text" id="search-input" class="search-input" placeholder="Escribe aqui...
+          ">
+        <button type="button" id="search-btn" class="search-button">Buscar</button>
+        <button type="reset" class="search-button js-reset-fav-button">Borrar
+          favoritos</button>
+      </form>
+      <section class=" results">
+        <ul id="series-list" class="js-series-list">
+        </ul>
+        <div class="js-fav-box">
+          <h3 class="fav-title">Tus favoritas</h3>
+          <ul class="fav-list js-fav-list"></ul>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <small>
+      Made with <span class="footer__heart">❤ </span> by
+      <a class="footer__link" href="https://github.com/EstLopCor" title="Visita mi GitHub" target="_blank">EstLopCor</a>
+      2021
+    </small>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
