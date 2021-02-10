@@ -74,12 +74,13 @@ function paintFavorites() {
    
     htmlCode += `<li class="box-results-fav js-box-results" id="${favorites[i].show.id}">`;
     htmlCode += `<button type="button" class="clear-btn js-clear-btn">X</button>`;
+    htmlCode += `<h3 class="title-result js-title-result h3-fav">${favorites[i].show.name}</h3>`;
     if (favorites[i].show.image === null) {
       htmlCode += `<div class="box-image"><img src="https://via.placeholder.com/210x295/ffffff/666666/?text=TV" class=" js-image-result img-fav"></div>`;
     } else {
       htmlCode += `<div class="box-image"><img src=${favorites[i].show.image.medium} class="image-result js-image-result img-fav"></div>`;
     }
-    htmlCode += `<h3 class="title-result js-title-result h3-fav">${favorites[i].show.name}</h3>`;
+
     htmlCode += `</li>`;
   }
   favBoxList.innerHTML = htmlCode;
