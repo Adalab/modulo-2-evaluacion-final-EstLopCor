@@ -71,10 +71,11 @@ function saveFavorite(serie) {
 function paintFavorites() {
   let htmlCode = '';
   for (let i = 0; i < favorites.length; i++) {
-    htmlCode += `<li class="box-results js-box-results li-fav" id="${favorites[i].show.id}">`;
+   
+    htmlCode += `<li class="box-results-fav js-box-results" id="${favorites[i].show.id}">`;
     htmlCode += `<button type="button" class="clear-btn js-clear-btn">X</button>`;
     if (favorites[i].show.image === null) {
-      htmlCode += `<div><img src="https://via.placeholder.com/210x295/ffffff/666666/?text=TV" class="image-result js-image-result"></div>`;
+      htmlCode += `<div class="box-image"><img src="https://via.placeholder.com/210x295/ffffff/666666/?text=TV" class=" js-image-result img-fav"></div>`;
     } else {
       htmlCode += `<div class="box-image"><img src=${favorites[i].show.image.medium} class="image-result js-image-result img-fav"></div>`;
     }
@@ -103,12 +104,12 @@ function resetFav() {
   getFromLocalStorage();
 }
 
-//GET FROM STORAGE
+//GET FROM LOCAL STORAGE
 function getFromLocalStorage() {
   if (JSON.parse(localStorage.getItem('favorites'))) {
     favorites = JSON.parse(localStorage.getItem('favorites'));
 
-    for (const serie of favorites) {
+    for (const favorite of favorites) {
       paintFavorites(series);
     }
   } else {

@@ -2,7 +2,6 @@ body {
   font-family: $font-main;
   .main {
     font-size: 22px;
-    height: 100vh;
 
     & .wrapper {
       height: 100vh;
@@ -36,6 +35,8 @@ body {
 }
 
 .results {
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -94,13 +95,14 @@ li {
 }
 .clear-btn {
   font-family: $font-main;
-  padding: 3px 7px;
+  height: 35px;
+  width: 100px;
   border-radius: 50%;
   background-color: $color-contrast;
-  transform: translate(250%, -50%);
+  transform: translate(-100%, -50%);
   border: none;
   color: $color-complementary;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .change-color {
@@ -114,19 +116,19 @@ li {
   padding: 5px;
 }
 
-li-fav {
+.box-results-fav {
   display: flex;
-  margin: 15px;
-  max-width: 155px;
-  max-height: 250px;
-
-  h3-fav {
-    padding: 10px;
-    font-size: 20px;
+  justify-content: center;
+  align-content: center;
+  border: solid 2px $color-complementary;
+  border-radius: 10px;
+  padding: 5px;
+  width: 150px;
+  height: 100px;
+  .img-fav {
+    width: 60px;
   }
-
-  img-fav {
-    border-radius: 10px;
-    width: 80%;
+  .h3-fav {
+    font-size: 14px;
   }
 }
