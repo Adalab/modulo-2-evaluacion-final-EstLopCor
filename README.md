@@ -37,4 +37,3 @@ In order to create this project I have used:
 ## Is something missing?
 If you think something is missing feel free to contact me ;)
 
-Translated with www.DeepL.com/Translator (free version)
