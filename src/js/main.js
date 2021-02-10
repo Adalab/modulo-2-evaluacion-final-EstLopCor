@@ -16,7 +16,7 @@ const resetFavButton = document.querySelector('.js-reset-fav-button');
 //CONNECT TO API
 function handlerClickButton() {
   getFromLocalStorage();
-  fetch(`http://api.tvmaze.com/search/shows?q=${searchInput.value}`)
+  fetch(`//api.tvmaze.com/search/shows?q=${searchInput.value}`)
     .then((response) => response.json())
     .then((data) => {
       series = data;
