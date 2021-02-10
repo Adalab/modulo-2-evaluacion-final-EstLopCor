@@ -30,7 +30,7 @@ function paintSeries() {
   for (let i = 0; i < series.length; i++) {
     htmlCode += `<li class="box-results js-box-results" id="${series[i].show.id}">`;
     if (series[i].show.image === null) {
-      htmlCode += `<div><img src="https://via.placeholder.com/210x295/ffffff/666666/?text=TV" class="image-result js-image-result"></div>`;
+      htmlCode += `<div><img src="//via.placeholder.com/210x295/ffffff/666666/?text=TV" class="image-result js-image-result"></div>`;
     } else {
       htmlCode += `<div class="box-image"><img src=${series[i].show.image.medium} class="image-result js-image-result"></div>`;
     }
